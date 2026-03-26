@@ -59,7 +59,7 @@ public class AlumnoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.save(alumnoDb));
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}") // ELIMINAR
     public ResponseEntity<?> eliminar(@PathVariable Long id) {
         service.deleteById(id);
         return ResponseEntity.noContent().build();
