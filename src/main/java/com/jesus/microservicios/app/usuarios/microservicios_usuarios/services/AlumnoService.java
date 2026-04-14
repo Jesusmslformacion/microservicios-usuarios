@@ -1,17 +1,11 @@
 package com.jesus.microservicios.app.usuarios.microservicios_usuarios.services;
 
-import java.util.Optional;
 
 import com.jesus.microservicios.app.usuarios.microservicios_usuarios.models.entity.Alumno;
+import com.jesus.microservicios.commons.commons_microservicios.services.CommonService;
 
-public interface AlumnoService {
+public interface AlumnoService extends CommonService<Alumno> {
 
 
-    public Iterable<Alumno> findAll();
-
-    public Optional<Alumno> findById(Long id);
-
-    public Alumno save(Alumno alumno);
-
-    public void deleteById(Long id);
+    
 }
